@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <H1>Projects Page Heading</H1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About Me</a></li>
+            <li><a href="{{ url_for('projects') }}">Projects</a></li>
+            <li><a href="{{ url_for('blog') }}">Blog</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <p>Body</p>
+    </div>
+
+</body>
+</html>
